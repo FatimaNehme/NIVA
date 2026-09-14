@@ -36,7 +36,7 @@ function Home() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/NIVA">
 
       <Routes>
 
