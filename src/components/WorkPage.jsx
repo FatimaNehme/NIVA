@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { supabase } from "../lib/supabaseClient";
 
 function WorkPage() {
@@ -162,9 +163,14 @@ function WorkPage() {
 
       </div>
 
-      <a href="/" className="all-work-back">
-        ← Back to home
-      </a>
+      <Link to="/" className="all-work-back">
+  <span className="back-arrow">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M19 12H5M11 6L5 12L11 18" />
+    </svg>
+  </span>
+  Back to home
+</Link>
 
     </section>
   );
