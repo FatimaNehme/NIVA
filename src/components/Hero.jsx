@@ -88,8 +88,13 @@ function Hero() {
         </p>
 
         <div className="mini-button">
-          Explore <span>↗</span>
-        </div>
+  Explore
+  <span className="mini-button-arrow">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M5 19L19 5M9 5H19V15" />
+    </svg>
+  </span>
+</div>
 
       </div>
 

@@ -34,8 +34,11 @@ function Contact() {
   className="contact-button"
 >
   <span>Start a Project</span>
-  <span className="contact-button-arrow">↗</span>
-</a>
+<span className="contact-button-arrow">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M5 19L19 5M9 5H19V15" />
+  </svg>
+</span></a>
 
 <div className="project-bubbles">
   <span className="project-bubble bubble-1"></span>
