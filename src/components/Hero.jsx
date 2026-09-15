@@ -24,7 +24,11 @@ function Hero() {
 
         <div className="hero-actions">
           <a href="#contact" className="primary-btn">
-            Start a Project <span>↗</span>
+            Start a Project <span className="arrow-icon">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M5 19L19 5M9 5H19V15" />
+  </svg>
+</span>
           </a>
 
           <a href="#work" className="secondary-btn">
@@ -94,7 +98,6 @@ function Hero() {
       <div className="mini-orbit"></div>
 
       <div className="mini-footer">
-        <span>SCROLL</span>
         <span>🫧</span>
       </div>
 

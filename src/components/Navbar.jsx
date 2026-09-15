@@ -24,7 +24,11 @@ function Navbar() {
 
       <a href="#contact" className="nav-cta" onClick={closeMenu}>
         <span>Start a Project</span>
-        <span className="nav-cta-arrow">↗</span>
+        <span className="arrow-icon">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M5 19L19 5M9 5H19V15" />
+  </svg>
+</span>
       </a>
 
       <button

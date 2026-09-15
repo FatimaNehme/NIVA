@@ -1,5 +1,6 @@
 
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Reveal from "./Reveal";
 import { supabase } from "../lib/supabaseClient";
 
@@ -139,8 +140,10 @@ function Work() {
                   </div>
 
                   <span className="work-arrow">
-                    ↗
-                  </span>
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M5 19L19 5M9 5H19V15" />
+  </svg>
+</span>
 
                 </div>
               </>
@@ -174,9 +177,14 @@ function Work() {
 
       </Reveal>
       <div className="work-explore">
-  <a href="/work">
-    Explore more work <span>↗</span>
-  </a>
+    <Link to="/work">
+  Explore more work
+  <span className="explore-arrow">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M5 19L19 5M9 5H19V15" />
+    </svg>
+  </span>
+  </Link>
 </div>
 
       <div className="work-bottom">
